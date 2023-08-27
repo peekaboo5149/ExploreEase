@@ -6,9 +6,9 @@ import {
   UnauthorizedException,
 } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
-import { IS_PUBLIC_KEY, jwtSecret } from '../utils/constants'
+import { IS_PUBLIC_KEY, jwtSecret } from '@common/constants'
 import { Reflector } from '@nestjs/core'
-import { RedisService } from 'src/utils/cache/redis.service'
+import { RedisService } from '@common/cache/redis.service'
 
 export default class AuthGuard implements CanActivate {
   private logger: Logger = new Logger(AuthGuard.name)

@@ -9,9 +9,9 @@ import {
 } from '@nestjs/common'
 import { PrismaService } from 'prisma/prisma.service'
 import { CreateUserDto, RefreshTokenDto, UserDto } from './model/auth.dto'
-import { EncryptionService } from '../utils/services/encryption/encryption.service'
+import { EncryptionService } from '@services/encryption/encryption.service'
 import { JwtService } from '@nestjs/jwt'
-import { RedisService } from 'src/utils/cache/redis.service'
+import { RedisService } from '@common/cache/redis.service'
 
 @Injectable()
 export class AuthService {

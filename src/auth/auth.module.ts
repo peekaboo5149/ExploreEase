@@ -1,13 +1,13 @@
 import { Module } from '@nestjs/common'
 import { AuthService } from './auth.service'
 import { AuthController } from './auth.controller'
-import { EncryptionModule } from '../utils/services/encryption/encryption.module'
-import { EncryptionService } from '../utils/services/encryption/encryption.service'
+import { EncryptionModule } from '@services/encryption/encryption.module'
+import { EncryptionService } from '@services/encryption/encryption.service'
 import { JwtModule } from '@nestjs/jwt'
-import { jwtSecret } from '../utils/constants'
+import { jwtSecret } from '@common/constants'
 import { APP_GUARD } from '@nestjs/core'
 import AuthGuard from './auth.guard'
-import { RedisModule } from '../utils/cache/redis.module'
+import { RedisModule } from '@common/cache/redis.module'
 
 @Module({
   imports: [
