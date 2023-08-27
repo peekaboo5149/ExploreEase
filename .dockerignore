@@ -1,0 +1,49 @@
+# Ignore files and directories commonly not needed in a Docker image
+node_modules
+npm-debug.log
+yarn-error.log
+yarn.lock
+.DS_Store
+
+# Ignore development-specific files
+*.spec.ts
+*.test.ts
+*.e2e-spec.ts
+*.map
+test/
+*.env
+
+# Ignore Nest.js build output (dist directory)
+dist
+logs/
+coverage/
+
+# Ignore Nest.js cache and temporary files
+.nest
+.tmp
+
+# Ignore configuration files that might contain sensitive information
+.env
+.env.local
+.env.*.local
+.env.build
+.env.test
+.env.production
+
+# Ignore package manager files
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
+.pnpm
+
+# Ignore version control system directories
+.git
+.svn
+.github
+
+.vscode
+.idea
+.gitignore
+.prettier*
+Dockerfile
+docker-compose.yaml
