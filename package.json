@@ -1,8 +1,8 @@
 {
     "name": "exploreease",
     "version": "0.0.1",
-    "description": "",
-    "author": "",
+    "description": "A travel booking platform",
+    "author": "Tanmay Kumar <ktanmay5149@gmail.com>",
     "private": true,
     "license": "MIT",
     "scripts": {
